@@ -179,6 +179,15 @@
 (detached_modifier_extension (todo_item_urgent)) @neorg.todo_items.urgent
 (detached_modifier_extension (todo_item_recurring)) @neorg.todo_items.recurring
 
+; Custom neorg todo list
+
+(unordered_list1
+    state: (detached_modifier_extension (todo_item_done))
+    content: (paragraph) @neorg.todo_items.done.task
+  )
+
+
+
 ; ; Unordered lists
 [(unordered_list1_prefix)
  (unordered_list2_prefix)
