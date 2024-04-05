@@ -176,16 +176,25 @@
 (detached_modifier_extension (todo_item_on_hold)) @neorg.todo_items.on_hold
 (detached_modifier_extension (todo_item_cancelled)) @neorg.todo_items.cancelled
 (detached_modifier_extension (todo_item_uncertain)) @neorg.todo_items.uncertain
-(detached_modifier_extension (todo_item_urgent)) @neorg.todo_items.urgent
+(detached_modifier_extension (todo_item_urgent)) @neorg.error.todo_item.urgent
 (detached_modifier_extension (todo_item_recurring)) @neorg.todo_items.recurring
 
-; Custom neorg todo list
+; Custom neorg Todo list
 
 (unordered_list1
     state: (detached_modifier_extension (todo_item_done))
     content: (paragraph) @neorg.todo_items.done.task
   )
 
+(unordered_list1
+    state: (detached_modifier_extension (todo_item_recurring))
+    content: (paragraph) @neorg.todo_items.recurring.task
+  )
+
+(unordered_list1
+    state: (detached_modifier_extension (todo_item_urgent))
+    content: (paragraph) @neorg.error.todo_item.urgent.task
+  )
 
 
 ; ; Unordered lists
