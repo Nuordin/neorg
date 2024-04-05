@@ -173,7 +173,7 @@
 (detached_modifier_extension (todo_item_undone)) @neorg.todo_items.undone
 (detached_modifier_extension (todo_item_done)) @neorg.todo_items.done
 (detached_modifier_extension (todo_item_pending)) @neorg.todo_items.pending
-(detached_modifier_extension (todo_item_on_hold)) @neorg.todo_items.on_hold
+(detached_modifier_extension (todo_item_on_hold)) @neorg.headings.6.title.todo_items.on_hold
 (detached_modifier_extension (todo_item_cancelled)) @neorg.todo_items.cancelled
 (detached_modifier_extension (todo_item_uncertain)) @neorg.todo_items.uncertain
 (detached_modifier_extension (todo_item_urgent)) @neorg.error.todo_item.urgent
@@ -196,6 +196,10 @@
     content: (paragraph) @neorg.error.todo_item.urgent.task
   )
 
+(unordered_list1
+    state: (detached_modifier_extension (todo_item_on_hold))
+    content: (paragraph) @neorg.headings.6.title.todo_items.on_hold.task
+  )
 
 ; ; Unordered lists
 [(unordered_list1_prefix)
